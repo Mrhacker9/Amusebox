@@ -10,8 +10,8 @@ import datetime
 from base64 import b64decode,b64encode
 from datetime import date
 
-expirydate = datetime.date(2022, 11, 10)
-#expirydate = datetime.date(2021, 8, 30)
+expirydate = datetime.date(2020, 11, 10)
+#expirydate = datetime.date(2020, 8, 30)
 today=date.today()
 def hero():
 
@@ -22,7 +22,7 @@ def hero():
             for c in itertools.cycle(['|', '/', '-', '\\']) :
                 if done:
                     break
-                sys.stdout.write('\rhacking in the parity server for next colour--------- ' + c)
+                sys.stdout,write('\rhacking in the parity server for next colour--------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
@@ -41,7 +41,7 @@ def hero():
             for c in itertools.cycle(['|', '/', '-', '\\']):
                 if done:
                     break
-                sys.stdout.write('\rgetting the colour wait --------- ' + c)
+                sys.stdout,write('\rgetting the colour wait --------- ' + c)
                 sys.stdout.flush()
                 time.sleep(0.1)
             sys.stdout.write('\rDone!     ')
@@ -56,7 +56,7 @@ def hero():
     def clear():
         # for windows
         if name == 'nt':
-            _ = system('cls')
+            _ = system('class')
         # for mac and linux(here, os.name is 'posix')
         else:
             _ = system('clear')
@@ -73,7 +73,7 @@ def hero():
     while(y):
         clear()
         system(banner)
-        print("Contact me on telegram @Hacker6363")
+        print("Contact me on telegram @He Is Frauad")
         print("Enter ",newperiod," Parity Price :")
         current=input()
         current=int(current)
@@ -105,14 +105,14 @@ def hero():
             n=int(current)%10
             if((m%2==0 and n%2==0) or (m%2==1 and n%2==1)):
                 if current in numbers:
-                    print(newperiod+1,": RED")
-                else:
                     print(newperiod+1,": GREEN")
+                else:
+                    print(newperiod+1,": RED")
             else:
                 if current in numbers:
-                    print(newperiod+1,": GREEN")
-                else:
                     print(newperiod+1,": RED")
+                else:
+                    print(newperiod+1,": GREEN")
         i=i+1
         newperiod+=1
         numbers.append(current)
@@ -124,7 +124,7 @@ def hero():
             system('figlet Thank you!!')
             print("Play on next specified time!!")
             print("-----------Current Time UP----------")
-            sys.exit(" \n \n \n Contact on Telegram @Hacker6363")
+            sys.exit(" \n \n \n Contact on Telegram @He Is Fraud")
             #print(numbers)
 
 
@@ -159,7 +159,7 @@ if(expirydate>today):
         print("2nd Sept 2021, 08:00 PM- 08:30 PM")
         print("Please play on the given time, and ")
         print("If you think it is an error contact")
-        print(" admin on telegram @Hacker6363 ")
+        print(" admin on telegram @He Is Fraud ")
 
 
 
@@ -167,4 +167,4 @@ else:
     banner='figlet AMUSEBOX'
     system(banner)
     print("Your hack has expired--- Please contact")
-    print(" on telegram -----------@Hacker6363")
+    print(" on telegram -----------@He Is Fraud")
